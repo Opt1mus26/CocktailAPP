@@ -14,11 +14,14 @@ class DetailViewController: UIViewController {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
     @IBOutlet var makeUpDescriptionLabel: UILabel!
-
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    
     var dataMakeUp: MakeUpElement!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
         guard let brand = dataMakeUp?.brand else { return }
         guard let name = dataMakeUp?.name else { return }
         navigationItem.title = "\(brand.capitalized) - \(name)"
@@ -34,6 +37,7 @@ class DetailViewController: UIViewController {
         guard let imageData = try? Data(contentsOf: url) else { return }
         DispatchQueue.main.async {
             self.imageView.image = UIImage(data: imageData)
+            self.activityIndicator.stopAnimating()
         }
     }
     }
