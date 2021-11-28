@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0FFB752753EEF40098E257 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0FFB742753EEF40098E257 /* DetailViewController.swift */; };
 		EF46591327529BE200A9FF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF46591227529BE200A9FF64 /* AppDelegate.swift */; };
 		EF46591527529BE200A9FF64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF46591427529BE200A9FF64 /* SceneDelegate.swift */; };
-		EF46591727529BE200A9FF64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF46591627529BE200A9FF64 /* ViewController.swift */; };
 		EF46591A27529BE200A9FF64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF46591827529BE200A9FF64 /* Main.storyboard */; };
 		EF46591C27529BE300A9FF64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF46591B27529BE300A9FF64 /* Assets.xcassets */; };
 		EF46591F27529BE300A9FF64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF46591D27529BE300A9FF64 /* LaunchScreen.storyboard */; };
+		EF4659272752A2E900A9FF64 /* MakeUpListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4659262752A2E900A9FF64 /* MakeUpListViewController.swift */; };
+		EF46592B2752A9D100A9FF64 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF46592A2752A9D100A9FF64 /* CustomTableViewCell.swift */; };
+		EF46592F2752ADB700A9FF64 /* MakeUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF46592E2752ADB700A9FF64 /* MakeUpData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF0FFB742753EEF40098E257 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EF46590F27529BE200A9FF64 /* CocktailAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocktailAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF46591227529BE200A9FF64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF46591427529BE200A9FF64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF46591627529BE200A9FF64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF46591927529BE200A9FF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF46591B27529BE300A9FF64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF46591E27529BE300A9FF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF46592027529BE300A9FF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF4659262752A2E900A9FF64 /* MakeUpListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeUpListViewController.swift; sourceTree = "<group>"; };
+		EF46592A2752A9D100A9FF64 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		EF46592E2752ADB700A9FF64 /* MakeUpData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeUpData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 			children = (
 				EF46591227529BE200A9FF64 /* AppDelegate.swift */,
 				EF46591427529BE200A9FF64 /* SceneDelegate.swift */,
-				EF46591627529BE200A9FF64 /* ViewController.swift */,
+				EF4659262752A2E900A9FF64 /* MakeUpListViewController.swift */,
+				EF46592E2752ADB700A9FF64 /* MakeUpData.swift */,
+				EF46592A2752A9D100A9FF64 /* CustomTableViewCell.swift */,
+				EF0FFB742753EEF40098E257 /* DetailViewController.swift */,
 				EF46591827529BE200A9FF64 /* Main.storyboard */,
 				EF46591B27529BE300A9FF64 /* Assets.xcassets */,
 				EF46591D27529BE300A9FF64 /* LaunchScreen.storyboard */,
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF46591727529BE200A9FF64 /* ViewController.swift in Sources */,
+				EF46592F2752ADB700A9FF64 /* MakeUpData.swift in Sources */,
+				EF46592B2752A9D100A9FF64 /* CustomTableViewCell.swift in Sources */,
 				EF46591327529BE200A9FF64 /* AppDelegate.swift in Sources */,
 				EF46591527529BE200A9FF64 /* SceneDelegate.swift in Sources */,
+				EF4659272752A2E900A9FF64 /* MakeUpListViewController.swift in Sources */,
+				EF0FFB752753EEF40098E257 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
