@@ -43,7 +43,6 @@ class MakeUpListViewController: UITableViewController {
             detailsVC.dataMakeUp = makeUps[indexPath.row]
         }
     }
-    
 }
 
 extension MakeUpListViewController {

@@ -25,11 +25,14 @@ class DetailViewController: UIViewController {
         guard let brand = dataMakeUp?.brand else { return }
         guard let name = dataMakeUp?.name else { return }
         navigationItem.title = "\(brand.capitalized) - \(name)"
-        brandLabel.text = dataMakeUp?.brand?.capitalized
-        nameLabel.text = dataMakeUp?.name
+        guard let brand = dataMakeUp?.brand?.capitalized else { return }
+        brandLabel.text = "Бренд: \(brand)"
+        guard let name = dataMakeUp?.name else { return }
+        nameLabel.text = "Товар: \(name)"
         guard let price = dataMakeUp?.price else { return }
         priceLabel.text = "Цена: \(price)$"
-        makeUpDescriptionLabel.text = dataMakeUp?.makeUpDescription
+        guard let description = dataMakeUp?.makeUpDescription else { return }
+        makeUpDescriptionLabel.text = "Описание: \(description)"
         
     DispatchQueue.global().async {
         let strigURL = self.dataMakeUp.imageLink
