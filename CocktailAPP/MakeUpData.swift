@@ -25,7 +25,7 @@ struct MakeUpElement: Codable {
     let productAPIURL: String
     let apiFeaturedImage: String
     let productColors: [ProductColor]
-
+    
     enum CodingKeys: String, CodingKey {
         case id, brand, name, price
         case priceSign = "price_sign"
@@ -78,7 +78,7 @@ enum PriceSign: String, Codable {
 struct ProductColor: Codable {
     let hexValue: String
     let colourName: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case hexValue = "hex_value"
         case colourName = "colour_name"
